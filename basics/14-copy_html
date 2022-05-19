@@ -1,2 +1,2 @@
 #!/bin/bash
-cp --copy-html
+cp -rua *.hmtl ../
