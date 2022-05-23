@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +rwx root
+chmod a+x root
