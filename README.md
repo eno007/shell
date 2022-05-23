@@ -4,5 +4,4 @@ The shell is the Linux command line interpreter. It provides an interface betwee
 
 In this file you will see a variety of commands executable for different tasks as below:
 - **[Shell basics](https://github.com/eno007/shell/tree/main/basics)**
-- **Shell permissions**
-
+- **[Shell permissions](https://github.com/eno007/shell/tree/main/permissions)**
