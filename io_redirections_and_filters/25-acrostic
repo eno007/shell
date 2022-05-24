@@ -1,0 +1,2 @@
+#!/bin/bash
+cut -c ì. | paste -d -s
