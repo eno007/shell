@@ -15,4 +15,12 @@ In this directory you will learn about what do the commands `head`, `tail`, `fin
 - [6-third_line](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/6-third_line) 
 **Script that contains a combination of command `head` and `tail` that displays the third line of the file requested.**
 - [7-file](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/7-file) 
-**Script that contains command `echo` that creates a file named exactly as requested and containing a specific text  ending by a new line.** 
+**Script that contains command `echo` that creates a file named exactly as requested and containing a specific text  ending by a new line.**
+- [8-cwd_state](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/8-cwd_state)
+**(Script that contains the command `>>` that writes into the file requested the result of a command requested and to overwrite the file.)**
+- [9-duplicate_last_line](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/9-duplicate_last_line)
+**(Script that will use command `tail ` and `>>`  that duplicates the requested line of the file given. )**
+- [10-no_more_js](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/10-no_more_js)
+**(Script that contains command `find` deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.)**
+- [11-directories](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/11-directories)
+**Script that contains command `find` and `wc` that counts the number of directories and sub-directories in the current directory.** 
