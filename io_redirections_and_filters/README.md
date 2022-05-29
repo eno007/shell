@@ -24,3 +24,19 @@ In this directory you will learn about what do the commands `head`, `tail`, `fin
 **(Script that contains command `find` deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.)**
 - [11-directories](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/11-directories)
 **Script that contains command `find` and `wc` that counts the number of directories and sub-directories in the current directory.** 
+- [12-newest_files](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/12-newest_files)
+**Script that contains command `ls` and `head` that displays the 10 newest files in the current directory.**
+- [13-unique](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/13-unique)
+**Script that contains command `sort` and `uniq` that takes a list of words as input and prints only words that appear exactly once.**
+- [14-findthatword](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/14-findthatword)
+**Script that contains a combination of command `grep` that displays lines containing the pattern requested from the file  requested.**
+- [15-countthatword](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/15-countthatword)
+**Script that contains command `grep` and `wc` that displays the number of lines that contain the pattern requested in the file requested.**
+- [16-whatsnext](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/16-whatsnext)
+**(Script that contains the command `grep` that displays lines containing the pattern requested and 'n' lines after them in the file given.)**
+- [17-hidethisword](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/17-hidethisword)
+**(Script that will use command `grep ` that displays all the lines in the file given that do not contain the pattern requested. )**
+- [18-letteronly](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/18-letteronly)
+**(Script that contains command `grep -i` that displays all lines of the file given starting with a letter that include capital letters as well.)**
+- [19-AZ](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/19-AZ)
+**Script that contains command `tr` that replace all characters from input to specified output respectively.**
