@@ -19,6 +19,8 @@ You will see scripts that are going to give you a better insight of:
 2. How to list aliases
 3. How to temporarily disable an alias
 
+## Projects are as below:
+
 - [0-alias](https://github.com/eno007/shell/blob/main/init_files_variables_and_expansions/0-alias)
 **Script that contains command `alias` that creates an alias.**
 - [1-hello_you](https://github.com/eno007/shell/blob/main/init_files_variables_and_expansions/1-hello_you)
