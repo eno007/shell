@@ -40,3 +40,17 @@ In this directory you will learn about what do the commands `head`, `tail`, `fin
 **(Script that contains command `grep -i` that displays all lines of the file given starting with a letter that include capital letters as well.)**
 - [19-AZ](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/19-AZ)
 **Script that contains command `tr` that replace all characters from input to specified output respectively.**
+- [20-hiago](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/20-hiago)
+**Script that contains command `tr -d` that removes all given characters from input.**
+- [21-reverse](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/21-reverse)
+**Script that contains command `rev` that  reverse its input.**
+- [22-users_and_homes](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/22-users_and_homes)
+**Script that contains a combination of command `cut` and `sort` that displays all users and their home directories, sorted by users.**
+- [23-empty_casks](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/23-empty_casks)
+**Script that contains command `find`, `cut` and `rev` that finds all empty files and directories in the current directory and all sub-directories, only the names of the files and directories should be displayed (not the entire path), hidden files should be listed, one file name per line and the listing should end with a new line.**
+- [24-gifs](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/24-gifs)
+**(Script that contains the command `find`, `cut`, `sort` and `rev` that lists all the files with a specified extension in the current directory and all its sub-directories as requested.)**
+- [25-acrostic](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/25-acrostic)
+**(Script that will use command `cut ` and `paste` that  decodes acrostics that use the first letter of each line. )**
+- [26-the_biggest_fan](https://github.com/eno007/shell/blob/main/io_redirections_and_filters/26-the_biggest_fan)
+**(Script that contains command `cut` `sort` `uniq` `head` and `rev` that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.)**
