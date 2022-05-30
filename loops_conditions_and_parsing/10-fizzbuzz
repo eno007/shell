@@ -11,7 +11,7 @@ do
 	then
 		echo "Fizz"
 	
-	elif [ i%3==0 && i%5==0 ]  
+	elif (( i%3==0 && i%5==0 ))  
 	then
 		echo "FizzBuzz"
 
