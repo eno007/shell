@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #'script that displays, The content of the current directory, in a list format, where only the part of the name after the first dash is displayed'
 i="/etc/passwd"
-while read Line 
+while read -r Line 
 do
 	echo "$Line" | cut -d ':' -f1,3,6
 done < "$i"
