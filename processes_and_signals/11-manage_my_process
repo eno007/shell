@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
-#'Script that creates the file "/var/run/myscript.pid" containing its PID, displays 'To infinity and beyond' indefinitely, displays 'I hate the kill command' when receiving a SIGTERM signal, displays 'Y U no love me?!' when receiving a SIGINT signal, deletes the file "/var/run/myscript.pid" and terminates itself when receiving a SIGQUIT or SIGTERM signal'
-removefile_exit()
-{ 
-	rm -f /var/run/myscript.pid;
-	exit
-}
-trap "echo 'Y U no love me?!'" SIGINT
-trap "echo 'I hate the kill command' ; removefile_exit" SIGTERM
-trap "echo 'I hate the kill command' ; removefile_exit" SIGQUIT
-echo $$ >> /var/run/myscript.pid
-i=1
-while (( i>=0 ))
-do
-	echo "To infinity and beyond"
-	sleep 2
-done
+#'Script that contains 4 proceses of execution for the input given by user: start, stop, restart and none of above'
+case "$($1)" in 
+	start) echo "manage_my_process started"
+		./manage_my_process & echo "$!" > "/var/run/my_process.pid"
+		;;
+	stop) echo "manage_my_process stopped"
+		sudo pkill -f "./manage_my_process"
+		rm "/var/run/my_process.pid"
+		;;
+	restart) echo "manage_my_process started"
+		sudo pkill -f "./manage_my_process"
+        	rm "/var/run/my_process.pid"
+		echo "manage_my_process started"
+        	./manage_my_process & echo "$!" > "/var/run/my_process.pid"
+		;;
+	*) echo "Usage: manage_my_process {start|stop|restart}"
+		;;
+esac
