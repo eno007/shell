@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#'Script that contains 4 proceses of execution for the input given by user: start, stop, restart and none of above using "if"'
+if [ "$1" == "start" ]
+then 
+	echo "manage_my_process started"
+	./manage_my_process & echo "$!" > "/var/run/my_process.pid"
+elif [ "$1" == "stop" ] 
+then 
+	echo "manage_my_process stopped"
+	sudo pkill -f "./manage_my_process"
+	rm "/var/run/my_process.pid"
+elif [ "$1" == "restart" ] 
+then       
+	echo "manage_my_process restarted"
+	sudo pkill -f "./manage_my_process"
+        rm "/var/run/my_process.pid"
+        ./manage_my_process & echo "$!" > "/var/run/my_process.pid"
+
+else 
+       	echo "Usage: manage_my_process {start|stop|restart}"
+fi
